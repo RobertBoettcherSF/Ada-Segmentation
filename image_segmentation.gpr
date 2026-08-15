@@ -5,6 +5,6 @@ project Image_Segmentation is
    for Main use ("main.adb", "tests.adb");
 
    package Compiler is
-      for Default_Switches ("Ada") use ("-gnat2012", "-gnatwa", "-gnatg", "-g", "-gnata");
+      for Default_Switches ("Ada") use ("-gnat2012", "-gnatwa", "-g", "-gnata");
    end Compiler;
 end Image_Segmentation;

@@ -3,8 +3,6 @@
 --  Implementation of classical image processing segmentation variants.
 --  ===================================================================
 
-with Ada.Containers.Ordered_Sets;
-
 package body Image_Segmentation is
 
    ------------------------------------------------------------------
@@ -103,7 +101,7 @@ package body Image_Segmentation is
                Between_Var : constant Float :=
                  Weight_B * Weight_F * (Diff * Diff);
             begin
-               if Between_Var > Max_Var then
+               if Between_Var >= Max_Var then
                   Max_Var := Between_Var;
                   Best_T  := T;
                end if;
